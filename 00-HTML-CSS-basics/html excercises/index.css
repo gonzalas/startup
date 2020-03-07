@@ -1,0 +1,64 @@
+body {
+    background-color: black;
+}
+
+header,
+footer,
+aside,
+nav {
+    background-color: #333333;
+}
+
+html * {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    color: white;
+    margin: 1rem;
+}
+
+.first-header {
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.section {
+    display: flex;
+    flex-flow: column wrap;
+    flex: 3;
+}
+
+#article-title,
+#article-footer {
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    flex: 1;
+    align-content: center;
+}
+
+aside {
+    display: flex;
+    flex-flow: column wrap;
+    flex: 2;
+}
+
+#aside-header {
+    display: flex;
+    justify-content: center;
+}
