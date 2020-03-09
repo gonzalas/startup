@@ -14,6 +14,7 @@ html * {
 .first-content {
     display: flex;
     flex-direction: row;
+    margin-bottom: 10%;
 }
 
 .navigation {
@@ -82,4 +83,19 @@ a {
     to {
         opacity: 1;
     }
+}
+
+.second-content {
+    text-align: center;
+}
+
+#alert-button {
+    font-size: 2em;
+    font-weight: 900;
+    border: 3px solid;
+    background-color: yellow;
+}
+
+#alert-button:hover {
+    cursor: pointer;
 }
