@@ -11,54 +11,56 @@ nav {
 
 html * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 14px;
     color: white;
     margin: 1rem;
-}
-
-.first-header {
-    display: flex;
-    justify-content: center;
-}
-
-.footer {
-    display: flex;
-    justify-content: center;
+    font-weight: 600;
 }
 
 .main {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+    flex-direction: row;
 }
 
-.section {
+.header {
+    font-size: 46px;
+    background-color: magenta;
+    text-align: center;
+    padding: 2px;
+}
+
+.footer {
+    font-size: 10px;
+    background-color: magenta;
+    text-align: right;
+    padding: 10px;
+}
+
+.content {
+    font-size: 14px;
+    justify-content: center;
+}
+
+.navigation {
+    font-size: 12px;
+    background-color: blue;
+    justify-content: left;
     display: flex;
-    flex-flow: column wrap;
-    flex: 3;
+    flex-flow: row wrap;
+}
+
+.sidebar {
+    font-size: 10px;
+    background-color: magenta;
+    justify-content: right;
 }
 
 #article-title,
-#article-footer {
-    display: flex;
-    justify-content: center;
-}
-
-nav {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-evenly;
-    flex: 1;
-    align-content: center;
-}
-
-aside {
-    display: flex;
-    flex-flow: column wrap;
-    flex: 2;
-}
-
+#article-footer,
 #aside-header {
-    display: flex;
-    justify-content: center;
+    text-align: center;
+}
+
+.article-content,
+.aside-content {
+    text-align: justify;
 }
