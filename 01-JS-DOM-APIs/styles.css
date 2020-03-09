@@ -41,6 +41,7 @@ a {
 .first-section {
     justify-content: center;
     margin: auto 8%;
+    min-width: 20rem;
 }
 
 .article-header {
