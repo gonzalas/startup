@@ -1,0 +1,85 @@
+html * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.main-header {
+    font-size: 3rem;
+    font-weight: 900;
+    padding: 10%;
+}
+
+.first-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.navigation {
+    justify-content: left;
+    margin: auto 1%;
+    width: 100%;
+}
+
+.nav-items {
+    display: grid;
+    grid-template-rows: 33% 33% 33%;
+    gap: 1em;
+    justify-content: center;
+}
+
+a {
+    background-color: black;
+    padding: 5px;
+    text-decoration: none;
+    font-weight: 900;
+    color: white;
+}
+
+.first-section {
+    justify-content: center;
+    margin: auto 8%;
+}
+
+.article-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.article-text {
+    text-align: justify;
+}
+
+.aside-content {
+    justify-content: right;
+    margin: auto 10%;
+}
+
+.aside-text {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+#hidden-content {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10%;
+    background-color: black;
+    width: 100%;
+    color: white;
+    display: none;
+    -webkit-animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    -ms-zoom-animation: fadein 2s;
+    animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
