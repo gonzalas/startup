@@ -2,7 +2,7 @@ html * {
     margin: 0;
     padding: 0;
     border: 0;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Courier New", Courier, monospace;
 }
 
 .main-header {
@@ -54,7 +54,7 @@ a {
 
 .aside-content {
     justify-content: right;
-    margin: auto 10%;
+    margin: auto 5%;
 }
 
 .aside-text {
