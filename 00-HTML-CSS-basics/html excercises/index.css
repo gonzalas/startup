@@ -14,6 +14,7 @@ html * {
     color: white;
     margin: 1rem;
     font-weight: 600;
+    font-size: 14px;
 }
 
 .main {
@@ -23,35 +24,34 @@ html * {
 
 .header {
     font-size: 46px;
-    background-color: magenta;
     text-align: center;
     padding: 2px;
 }
 
 .footer {
     font-size: 10px;
-    background-color: magenta;
-    text-align: right;
+    text-align: center;
     padding: 10px;
 }
 
 .content {
     font-size: 14px;
-    justify-content: center;
+    float: none;
 }
 
 .navigation {
     font-size: 12px;
-    background-color: blue;
-    justify-content: left;
-    display: flex;
-    flex-flow: row wrap;
+    float: left;
+    text-align: center;
+}
+
+.navigation a {
+    line-height: 5rem;
 }
 
 .sidebar {
     font-size: 10px;
-    background-color: magenta;
-    justify-content: right;
+    float: right;
 }
 
 #article-title,
@@ -63,4 +63,23 @@ html * {
 .article-content,
 .aside-content {
     text-align: justify;
+}
+
+[class$="r"] {
+    background-color: magenta;
+}
+
+[class*="a"]:not([class$="r"]) {
+    background-color: blue;
+}
+
+@media screen and (max-width: 480px) {
+    html * {
+        width: 92%;
+    }
+    .main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 }

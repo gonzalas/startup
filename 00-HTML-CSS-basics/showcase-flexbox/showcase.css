@@ -59,7 +59,7 @@ img {
     white-space: pre;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 480px) {
     header {
         display: flex;
         flex-flow: row wrap;
@@ -69,7 +69,7 @@ img {
     }
     .text {
         max-width: 100%;
-        margin-left: 10%;
+        margin: auto 5%;
         text-align: justify;
     }
     .img-container {
@@ -78,7 +78,34 @@ img {
     }
     .image {
         width: 100%;
-        margin-left: 15%;
+        padding: 5%;
+        margin-bottom: 10%;
+        position: relative;
+    }
+    .text-container {
+        left: 25%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    header {
+        display: flex;
+        flex-flow: row nowrap;
+        width: 90%;
+    }
+    h1 {
+        margin-left: 10%;
+    }
+    .text {
+        text-align: justify;
+    }
+    .img-container {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .image {
+        width: 80%;
+        padding: 5%;
         margin-bottom: 10%;
         position: relative;
     }
