@@ -127,6 +127,47 @@ a {
     padding: 0.5em;
 }
 
+.fourth-content {
+    text-align: center;
+}
+
+#table-section {
+    margin: 5% auto;
+}
+
+.input-title {
+    margin-bottom: 5%;
+}
+
+.data-input {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-bottom: 2px;
+}
+
+.input-content {
+    margin-bottom: 3%;
+}
+
+#button-table {
+    background-color: #5f9ea0;
+    padding: 1%;
+    border: 2px solid;
+    border-radius: 5%;
+}
+
+#table-container {
+    margin-left: 35%;
+    margin-right: 30%;
+}
+
+#table-container #cell {
+    border: 1px solid;
+    background-color: #5f9ea0;
+    padding: 30px;
+}
+
 @media screen and (max-width: 720px) {
     h1 {
         font-size: 4rem;
