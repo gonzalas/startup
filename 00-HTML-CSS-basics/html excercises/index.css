@@ -1,0 +1,66 @@
+body {
+    background-color: black;
+}
+
+header,
+footer,
+aside,
+nav {
+    background-color: #333333;
+}
+
+html * {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    margin: 1rem;
+    font-weight: 600;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+}
+
+.header {
+    font-size: 46px;
+    background-color: magenta;
+    text-align: center;
+    padding: 2px;
+}
+
+.footer {
+    font-size: 10px;
+    background-color: magenta;
+    text-align: right;
+    padding: 10px;
+}
+
+.content {
+    font-size: 14px;
+    justify-content: center;
+}
+
+.navigation {
+    font-size: 12px;
+    background-color: blue;
+    justify-content: left;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.sidebar {
+    font-size: 10px;
+    background-color: magenta;
+    justify-content: right;
+}
+
+#article-title,
+#article-footer,
+#aside-header {
+    text-align: center;
+}
+
+.article-content,
+.aside-content {
+    text-align: justify;
+}
