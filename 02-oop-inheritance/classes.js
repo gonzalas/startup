@@ -36,3 +36,10 @@ console.log("Title: " + movie3.title);
 console.log("Year: " + movie3.year);
 console.log("Duration: " + movie3.duration + " minutes");
 console.log(movie3.resume());
+
+class Actor {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+}
