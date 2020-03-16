@@ -105,3 +105,19 @@ const logger = new Logger();
 
 movie1.on("play", logger.log("play"));
 movie1.play();
+
+const social = {
+    share(friendName) {
+        console.log(`${friendName} share ${this.title}`);
+    },
+
+    like(friendName) {
+        console.log(`${friendName} likes ${this.title}`);
+    }
+};
+
+Object.assign(movie1, social);
+Object.assign(movie2, social);
+
+movie1.share("Carl");
+movie2.like("Paul");
