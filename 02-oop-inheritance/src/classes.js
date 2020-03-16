@@ -1,73 +1,7 @@
-class Actor {
-    constructor(name, age) {
-        this.name = name;
-        this.age = age;
-    }
-}
-
-class EventEmitter {
-    constructor() {
-        this.events = {};
-    }
-
-    on(eventName, callback) {
-        if (!this.events[eventName]) {
-            this.events[eventName] = callback;
-        }
-    }
-
-    emit(eventName) {
-        if (!this.events[eventName]) {
-            console.log("No event to emit.");
-            return;
-        }
-        this.events[eventName].call();
-    }
-
-    off(eventName) {
-        if (this.events[eventName]) {
-            delete this.events[eventName];
-        }
-    }
-}
-
-class Movie extends EventEmitter {
-    constructor(title, year, duration) {
-        super();
-        this.title = title;
-        this.year = year;
-        this.duration = duration;
-        this.cast = [];
-    }
-
-    play() {
-        this.emit("play");
-    }
-
-    pause() {
-        this.emit("pause");
-    }
-
-    resume() {
-        this.emit("resume");
-    }
-
-    addCast(cast) {
-        if (!Array.isArray(cast)) {
-            this.cast.push(" " + cast.name);
-        } else {
-            for (let i = 0; i < cast.length; i++) {
-                this.cast.push(" " + cast[i].name);
-            }
-        }
-    }
-}
-
-class Logger {
-    log(info) {
-        console.log(`The ${info} event has been emitted.`);
-    }
-}
+import EventEmitter from "./EventEmitter.js";
+import Movie from "./Movie.js";
+import Actor from "./Actor.js";
+import Logger from "./Logger.js";
 
 const movie1 = new Movie("Men of Honor", 2000, 129);
 const movie2 = new Movie("Pulp Fiction", 1994, 154);
