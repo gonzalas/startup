@@ -28,3 +28,24 @@ ctx.beginPath();
 ctx.arc(75, 105, 7, 0, 6.5);
 ctx.stroke();
 ctx.fill();
+
+//Draw a sun
+let positionSunStartX = 300;
+ctx.fillStyle = 'yellow';
+ctx.fillRect(positionSunStartX, 10, 15, 15);
+
+//-> Sun moving effect
+setInterval(() => {
+    ctx.fillStyle = 'yellow';
+    positionSunStartX -= 10;
+    ctx.fillRect(positionSunStartX, 10, 15, 15);
+}, 1000);
+
+//Sky "cleaning" position
+let positionSkyX = 305;
+
+setInterval(() => {
+    ctx.fillStyle = 'deepskyblue';
+    ctx.fillRect(positionSkyX, 8, 15, 20);
+    positionSkyX -= 10;
+}, 1000);
