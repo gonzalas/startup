@@ -3,10 +3,17 @@ body {
     background-color: #556b2f;
 }
 
-.container {
+.main-container {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.container-1 {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
+    margin-bottom: 3%;
 }
 
 .block {
@@ -26,4 +33,11 @@ h2 {
 .text {
     padding: 2rem;
     font-size: 1.5rem;
+}
+
+.container-2 {
+    background-color: white;
+    font-weight: 600;
+    border: 1px solid;
+    padding: 0px 50px;
 }
