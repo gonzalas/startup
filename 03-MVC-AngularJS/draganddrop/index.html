@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drag & Drop</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <article class="main-container">
+        <div class="container-1">
+            <div id="start-text" class="block">
+                <h2>Start Text</h2>
+                <div id="text-1" class="text" draggable="true">Text 1</div>
+                <div id="text-2" class="text" draggable="true">Text 2</div>
+                <div id="text-3" class="text" draggable="true">Text 3</div>
+            </div>
+            <div id="finish-text" class="block">
+                <h2>Finish Text</h2>
+            </div>
+        </div>
+
+        <div class="container-2" id="drop-file">
+            <p id="drop-text">Drag a .txt file in here</p>
+        </div>
+    </article>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
