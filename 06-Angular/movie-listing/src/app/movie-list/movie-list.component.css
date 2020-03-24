@@ -14,3 +14,9 @@ h3 {
     border: 1px solid;
     padding: 1em;
 }
+
+h3:hover {
+    cursor: pointer;
+    opacity: 0.5;
+    background-color: #a8e0cd;
+}

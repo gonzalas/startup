@@ -1,0 +1,18 @@
+<div class="details-header">
+
+</div>
+
+<section class="movie-details">
+    <div class="movie-information">
+        <h3>{{movie.title}}</h3>
+        <p>Duration: {{movie.duration}} minutes</p>
+        <h4>Casting</h4>
+        <ul>
+            <li *ngFor="let actor of movie.cast">{{actor}}</li>
+        </ul>
+    </div>
+
+    <div class="movie-poster">
+        <img src="{{movie.poster}}">
+    </div>
+</section>

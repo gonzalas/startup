@@ -22,3 +22,8 @@ h1 {
     -webkit-text-stroke: 1px black;
     padding: 2%;
 }
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
