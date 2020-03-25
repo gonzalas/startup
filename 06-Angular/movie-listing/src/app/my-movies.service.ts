@@ -14,6 +14,18 @@ export class MyMoviesService {
     localStorage.setItem("movies", JSON.stringify(this.favourites));
   }
 
+  removeFavourite(movie) {
+    let index = -1;
+
+    for (let i = 0; i < this.favourites.length; i++) {
+      if (movie.title === this.favourites[i].title) {
+        index = i;
+      }
+    }
+    if (index !== -1) this.favourites.splice(index, 1);
+    localStorage.setItem("movies", JSON.stringify(this.favourites));
+  }
+
   getMovies() {
     return this.favourites;
   }

@@ -6,5 +6,6 @@
 <div class="movies-list" *ngFor="let movie of favouriteMovies">
     <span>{{movie.title}}  - </span>
     <span>Duration: {{movie.duration}} minutes</span>
+    <button (click)="removeFavourite(movie)" (click)="getMovies()">Remove</button>
     <br>
 </div>

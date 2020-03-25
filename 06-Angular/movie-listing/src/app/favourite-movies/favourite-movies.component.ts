@@ -15,4 +15,12 @@ export class FavouriteMoviesComponent implements OnInit {
     this.favouriteMovies = this.movieService.getMovies();
     this.favouriteMovies = JSON.parse(localStorage.getItem("movies"));
   }
+
+  removeFavourite(movie) {
+    this.movieService.removeFavourite(movie);
+  }
+
+  getMovies() {
+    this.favouriteMovies = JSON.parse(localStorage.getItem("movies"));
+  }
 }
