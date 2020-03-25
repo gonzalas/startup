@@ -10,6 +10,9 @@
         <ul>
             <li *ngFor="let actor of movie.cast">{{actor}}</li>
         </ul>
+
+        <button (click)="addFavourite(movie)">Add Favourite</button>
+
     </div>
 
     <div class="movie-poster">

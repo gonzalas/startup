@@ -33,3 +33,13 @@ h4 {
 ul {
     line-height: 4rem;
 }
+
+button {
+    float: right;
+    margin-top: 20%;
+    font-weight: 800;
+}
+
+button:hover {
+    cursor: pointer;
+}
