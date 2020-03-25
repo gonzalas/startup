@@ -11,6 +11,7 @@ export class MyMoviesService {
 
   addFavourite(movie) {
     this.favourites.push(movie);
+    localStorage.setItem("movies", JSON.stringify(this.favourites));
   }
 
   getMovies() {

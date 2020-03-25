@@ -13,5 +13,6 @@ export class FavouriteMoviesComponent implements OnInit {
 
   ngOnInit(): void {
     this.favouriteMovies = this.movieService.getMovies();
+    this.favouriteMovies = JSON.parse(localStorage.getItem("movies"));
   }
 }
