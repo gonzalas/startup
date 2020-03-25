@@ -1,0 +1,33 @@
+.top-bar {
+    padding: 1%;
+    background-color: #295949;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+    -webkit-text-stroke: 1.7px black;
+}
+
+h1:hover {
+    cursor: pointer;
+}
+
+#favourites-movies {
+    background-color: #218060;
+    color: white;
+    font-size: 2em;
+    border-radius: 25px;
+    -webkit-text-stroke: 1px black;
+    padding: 2%;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}

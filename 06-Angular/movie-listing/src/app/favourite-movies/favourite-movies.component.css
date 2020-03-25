@@ -1,0 +1,28 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.description {
+    margin-bottom: 5%;
+    margin-left: 5%;
+}
+
+.movies-list {
+    text-align: center;
+    line-height: 4rem;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+button {
+    margin-left: 3rem;
+    vertical-align: middle;
+    background-color: none;
+    border-radius: 20px;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.5;
+    color: green;
+}

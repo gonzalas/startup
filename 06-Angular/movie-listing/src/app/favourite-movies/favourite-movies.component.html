@@ -1,0 +1,11 @@
+<div class="description">
+    <h1>Favourite Movies</h1>
+    <p>This is a space where there are shown all the movies that you have added as favourites.</p>
+</div>
+
+<div class="movies-list" *ngFor="let movie of favouriteMovies">
+    <span>{{movie.title}}  - </span>
+    <span>Duration: {{movie.duration}} minutes</span>
+    <button (click)="removeFavourite(movie)" (click)="getMovies()">Remove</button>
+    <br>
+</div>
